@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "dependencies": {
+    "nano": "~6"
+  },
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*"

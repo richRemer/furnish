@@ -56,6 +56,11 @@ describe("Modeler", function() {
                 
                 expect(modeler.models.Foo).to.be(FooModel);
             });
+            
+            it("should throw on duplicate name", function() {
+                expect(modeler.model.bind(modeler)).withArgs("Foo", ctor)
+                    .to.throwError();
+            });
         });
     });
 });

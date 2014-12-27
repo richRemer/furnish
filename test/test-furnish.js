@@ -75,5 +75,12 @@ describe("Model", function() {
         modeler = Modeler.create(url),
         model = modeler.model("example", ctor);
     
-    
+    describe("#create", function() {
+        it("should construct a model instance", function() {
+            var m = model.create();
+            expect(m).to.be.an("object");
+            expect(m.foo).to.be(42);
+            expect(m.str).to.be("foo");
+        });
+    });
 });

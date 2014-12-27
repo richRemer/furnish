@@ -8,7 +8,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "nano": "~6"
+    "nano": "~6",
+    "objektify": "*"
   },
   "devDependencies": {
     "mocha": "*",

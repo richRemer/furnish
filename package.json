@@ -2,9 +2,13 @@
   "name": "furnish",
   "version": "0.0.1",
   "description": "models backed by CouchDB",
-  "main": "index.js",
+  "description": "CouchDB-backed models",
+  "main": "furnish.js",
   "scripts": {
     "test": "mocha"
+  },
+  "dependencies": {
+    "nano": "~6"
   },
   "devDependencies": {
     "mocha": "*",

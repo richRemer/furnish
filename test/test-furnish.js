@@ -49,6 +49,14 @@ describe("Modeler", function() {
                 expect(model.modeler).to.be(modeler);
             });
         });
+        
+        describe("(string, function)", function() {
+            it("should create named model", function() {
+                var FooModel = modeler.model("Foo", ctor);
+                
+                expect(modeler.models.Foo).to.be(FooModel);
+            });
+        });
     });
 });
 

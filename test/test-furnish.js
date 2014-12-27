@@ -23,8 +23,11 @@ describe("Modeler", function() {
         });
     });
 
-    it("should expose DB object", function() {
-        var modeler = Modeler.create(url);
-        expect(modeler.db).to.be.an("object");
+    describe("#db", function() {
+        it("should be DB object", function() {
+            var modeler = Modeler.create(url);
+            expect(modeler.db).to.be.an("object");
+            expect(modeler.db.insert).to.be.a("function");
+        });
     });
 });

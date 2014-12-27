@@ -1,0 +1,22 @@
+{
+  "name": "furnish",
+  "version": "0.0.1",
+  "description": "CouchDB-backed models",
+  "main": "furnish.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richRemer/furnish.git"
+  },
+  "author": "Richard Remer (reanjr@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richRemer/furnish/issues"
+  }
+}
